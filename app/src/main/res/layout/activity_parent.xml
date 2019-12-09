@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E2E2"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:onClick="processLogoutLinkclick"
+        android:text="Log Out"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#232D66"></TextView>
+
+
+    <ImageView
+        android:id="@+id/imgStudent"
+        android:layout_width="150dp"
+        android:layout_height="147dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:src="@drawable/childimg"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Student Name"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Email"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"></TextView>
+
+    <TextView
+        android:id="@+id/tvdisplayEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="display Email"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Mobile Number"
+        android:textStyle="bold|italic"></TextView>
+
+    <TextView
+        android:id="@+id/tvdisplayphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="display Phone"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Topics"
+        android:textStyle="bold|italic"></TextView>
+
+    <TextView
+        android:id="@+id/tvdisplayTopics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="display Topics"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Home Work"
+        android:textStyle="bold|italic"></TextView>
+
+    <TextView
+        android:id="@+id/tvdisplayHW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="display HW"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Comments"
+        android:textStyle="bold|italic"></TextView>
+
+    <TextView
+        android:id="@+id/tvdisplayComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:paddingBottom="10dp"
+        android:text="display comments upto 4 line maximum"></TextView>
+
+</LinearLayout>

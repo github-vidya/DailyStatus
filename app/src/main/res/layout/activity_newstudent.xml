@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B8C532"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="Data Entry Form"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/childimg" android:layout_marginBottom="10dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_input_add" android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/tvaddpoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add student image"  android:layout_marginTop="40dp" android:paddingLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class :" />
+
+    <Spinner
+        android:id="@+id/spinner_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/tvnewformStud_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student ID :" />
+
+    <TextView
+        android:id="@+id/tvnewformStudID_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvnewformStudName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Name :" />
+
+    <EditText
+        android:id="@+id/etnewformstudName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/tvnewformParentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parent Name :" />
+
+    <EditText
+        android:id="@+id/etnewformParentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvnewformEMailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email :" />
+
+    <EditText
+        android:id="@+id/etnewformEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tvnewformPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone :" />
+
+    <EditText
+        android:id="@+id/etnewformPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textAlignment="center" android:onClick="processSaveNewStudentValues" />
+
+
+</LinearLayout>

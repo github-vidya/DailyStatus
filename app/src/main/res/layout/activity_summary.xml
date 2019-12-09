@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+    <!--  <androidx.gridlayout.widget.GridLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+      </androidx.gridlayout.widget.GridLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_addnewstudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="processAddNewStudent"
+            android:paddingBottom="20dp"
+            app:backgroundTint="#ABDF6F"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#B8C532"
+            android:text="Add a new student"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B8C532"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Current Student List"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <ListView
+        android:id="@+id/lv_StudNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
